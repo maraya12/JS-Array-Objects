@@ -1,0 +1,15 @@
+.container{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    justify-content:center;
+    text-align:center;
+    grid-gap:20px;
+    
+}
+img{
+    height:300px;
+}
+#storeName{
+    font-family: fantasy;
+    font-weight:bolder
+}
