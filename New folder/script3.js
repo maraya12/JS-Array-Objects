@@ -3,7 +3,7 @@
 let products = [
     {
         pname:"Anello Backpack Purple with Pink",
-        price:"₱ 2,000.00",
+        price:"₱ 2,500.00",
         pcode:"ANLBKPK001",
         description:"",
         manufacturer:"Anello Philippines",
@@ -36,7 +36,7 @@ let products = [
     },
     {
         pname:"Anello Backpack Red",
-        price:"₱ 2,000.00",
+        price:"₱ 2,500.00",
         pcode:"ANLBKPK004",
         description:"",
         manufacturer:"Anello Philippines",
@@ -130,10 +130,27 @@ products.forEach(function(item){
     output += `<div class='item'>
     <img style="width:300px; display:inline" src = ${item.imgurl}>
 
-    <a href = "${item.url}"> ${item.pname} </a>
+    <a href = "${item.url}"> ${item.pname} <br> ${item.price} </a>
+
+  
+
     </div>
     `
 
 })
 
 document.getElementById('container').innerHTML = output
+
+
+ 
+
+
+//  <a target="_blank" href ="${item.url}"> <img src= ${item.imgurl}></a>
+//  <a target="_blank" href ="${item.url}"><h1> ${item.pname}</h1></a>
+//  <p><span>Price: </span>${item.price}</p>
+//  <p><span>Code: </span>${item.pcode}</p>
+//  <p><span>Description: </span>${item.description}</p>
+//  <p><span>Manufacture: </span>${item.manufacturer}</p>
+//  <p><span>Stocks: </span>${item.stocks}</p>
+//  <p><span>Supplier: </span>${item.supplier}</p>
+//  <a target="_blank" href ="${item.url}"><button type="button" class="btn btn-primary">Buy Now</button></a>
